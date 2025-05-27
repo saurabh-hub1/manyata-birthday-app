@@ -1,4 +1,3 @@
-
 import streamlit as st
 from PIL import Image
 
@@ -59,3 +58,31 @@ for question, correct_answer in questions.items():
 if st.button("Submit Quiz"):
     st.success(f"You got {score}/{len(questions)} right! Perfect match – just like you two!")
     st.balloons()
+
+
+# Birthday Wishes Section
+st.markdown("## Heartfelt Wishes")
+
+if st.button("Read Your Birthday Letter"):
+    letter = '''
+    **To My Dearest Manyata,**
+
+    Happy 21st birthday, my love!
+
+    Seven years ago, we started something so simple, yet so powerful — a bond that has only grown stronger with time. From innocent smiles and shy hellos to stolen glances and deep conversations, we’ve built a world that I never want to live without.
+
+    Watching you grow — not just older, but wiser, more radiant, more *you* — has been the greatest joy of my life. You’re not just my girlfriend, you're my best friend, my calm in chaos, my inspiration in every sunrise. You light up my darkest days with a single smile, and even in silence, you speak to my soul in ways no words can.
+
+    Twenty-one years of the world being lucky to have you, and seven of those I’ve had the privilege of calling you mine. That’s more than just time — it’s a lifetime of memories, inside jokes, dreams shared under the stars, and moments that felt like magic.
+
+    I love you in ways I’ve never loved anyone before — with honesty, with depth, with my whole heart. You are my today, my every tomorrow, and everything beautiful in between.
+
+    On your special day, I just want you to know:  
+    No matter how many candles you blow out, I’ll always be wishing for the same thing — *you and me, forever.*  
+
+    Here's to your 21st — may this year bring you all the happiness you deserve, and may I always be by your side, making sure of it.
+
+    With all my heart,  
+    **[Your Name]**
+    '''
+    st.markdown(letter)
